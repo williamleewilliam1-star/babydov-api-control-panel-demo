@@ -1,0 +1,15 @@
+{
+  "name": "babydov-api-control-panel-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Electron control panel sample for a local REST API with verification-focused operations.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "mock": "node mock-api.js",
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}

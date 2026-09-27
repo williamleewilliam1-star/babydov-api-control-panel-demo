@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local API Control Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">BABYDOV • API AUTOMATION SAMPLE</p>
+        <h1>Local REST API Control Panel</h1>
+      </div>
+      <span id="status" class="badge">idle</span>
+    </header>
+    <section class="card grid">
+      <label>API base URL<input id="baseUrl" value="http://127.0.0.1:18777"></label>
+      <label>API key<input id="apiKey" value="demo-key" type="password"></label>
+    </section>
+    <section class="card grid">
+      <label>Profile name<input id="profileName" value="Demo Profile"></label>
+      <label>Proxy<input id="proxy" value="http://127.0.0.1:8080"></label>
+    </section>
+    <section class="actions">
+      <button data-action="create">Create profile</button>
+      <button data-action="list">Refresh profiles</button>
+      <button data-action="proxy">Test proxy</button>
+    </section>
+    <section class="card">
+      <div class="row"><h2>Profiles</h2><span id="count">0</span></div>
+      <div id="profiles" class="profiles"></div>
+    </section>
+    <section class="card">
+      <div class="row"><h2>Verified result log</h2><button id="clear" class="secondary">Clear</button></div>
+      <pre id="output">Ready.</pre>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
